@@ -3,21 +3,22 @@ package webhook
 import (
 	"encoding/json"
 	"fmt"
-	"github.com/aiteung/atapi"
-	"github.com/aiteung/atmessage"
-	"github.com/aiteung/module/model"
-	"github.com/whatsauth/wa"
 	"math/rand"
 	"net/http"
 	"os"
 	"strconv"
+
+	"github.com/aiteung/atapi"
+	"github.com/aiteung/atmessage"
+	"github.com/aiteung/module/model"
+	"github.com/whatsauth/wa"
 )
 
 func Post(w http.ResponseWriter, r *http.Request) {
 	var msg model.IteungMessage
 	var resp atmessage.Response
 	json.NewDecoder(r.Body).Decode(&msg)
-	link := "https://medium.com/@gilarwahibul/whatsauth-free-2fa-otp-notif-whatsapp-gateway-api-gratis-ab4d04f80601"
+	link := "https://medium.com/@ludhacokrah71/whatsauth-free-2fa-otp-notif-whatsapp-gateway-api-gratis-53d8b5fcb66e"
 	if r.Header.Get("Secret") == os.Getenv("SECRET") {
 		if msg.Message == "loc" || msg.Message == "Loc" || msg.Message == "lokasi" || msg.LiveLoc {
 			location, err := ReverseGeocode(msg.Latitude, msg.Longitude)
