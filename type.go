@@ -6,7 +6,7 @@ type Reply struct {
 
 var stringreply = []string{
 	"Jangan SPAAM woiii berisik lagi turuuuuu",
-	"Kamu hensommm bgt tau",
-	"genchananaaa genchanaaaayoooo",
-	"Jangan galak dong",
+	"Down 1 bang",
+	"Anjhai KAmu BOHONGGGGGGGG",
+	"Ajarin puh sepuh",
 }
